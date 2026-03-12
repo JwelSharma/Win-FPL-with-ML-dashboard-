@@ -27,9 +27,9 @@ Python | Streamlit | Scikit-learn | Pandas | Plotly | FPL API
 
 ## 🎯 Quick Start (Local)
 ```bash
-conda activate fantasy
+create virtual env
 pip install -r requirements.txt
-streamlit run winfpl.py  # or app.py
+streamlit run winfpl.py  # 
 ```
 
 ## 🔄 Auto-Updates
