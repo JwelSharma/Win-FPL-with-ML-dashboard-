@@ -3,7 +3,7 @@
 Live Fantasy Premier League dashboard with ML predictions using RandomForest. Features live FPL API data, fixture difficulty, player form trends, and interactive visualizations.
 
 ## 🚀 Live Demo
-[Deployed on Streamlit Cloud](https://winfplwithml.streamlit.app) (add after deploy)
+[Deployed on Streamlit Cloud](https://winfplwithml.streamlit.app)
 
 ## 📊 Features
 - **Live FPL Data**: Players, teams, histories, fixtures
