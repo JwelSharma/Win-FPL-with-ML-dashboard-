@@ -464,11 +464,7 @@ with row1_col1:
     top_players = filtered[['Name', 'team_name', 'Position', 'dreamteam_count', 'price', 'gw_points', 'total_points', 'form', 'round', 'goals_scored', 'assists', 'bonus', 'bps', 'defensive_contribution', 'transfers_in', 'transfers_out','fixture_difficulty', 'predicted_points']].sort_values('predicted_points', ascending=False)
     
     # Pro styling
-    styled_df = top_players.style\
-        .background_gradient(subset=['predicted_points', 'form'], cmap='RdYlGn')\
-        .background_gradient(subset=['price'], cmap='Blues')\
-        .format({'predicted_points': '{:.1f}', 'form': '{:.2f}', 'price': '{:.2f}'})
-    
+    styled_df = top_players
     st.dataframe(styled_df, use_container_width=True, height=450, hide_index=True)
   
   
@@ -578,4 +574,5 @@ st.markdown("*Built with ❤️ for FPL managers*")     #| Auto-refreshes every 
 
 #conda activate fantasy   
 #cd C:\Users\jwels\scrap
+
 #streamlit run winfpl.py
