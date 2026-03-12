@@ -465,7 +465,7 @@ with row1_col1:
     
     # Pro styling
     styled_df = top_players
-    st.dataframe(styled_df, use_container_width=True, height=450, hide_index=True)
+    #st.dataframe(styled_df, use_container_width=True, height=450, hide_index=True)
   
   
   
@@ -576,3 +576,4 @@ st.markdown("*Built with ❤️ for FPL managers*")     #| Auto-refreshes every 
 #cd C:\Users\jwels\scrap
 
 #streamlit run winfpl.py
+
