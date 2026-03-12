@@ -461,11 +461,8 @@ row4_col1, row4_col2 = st.columns([2,1])
 # Top Left: Pro Player Table
 with row1_col1:
     st.subheader("🏆 Top Predicted Players")
-    top_players = filtered[['Name', 'team_name', 'Position', 'dreamteam_count', 'price', 'gw_points', 'total_points', 'form', 'round', 'goals_scored', 'assists', 'bonus', 'bps', 'defensive_contribution', 'transfers_in', 'transfers_out','fixture_difficulty', 'predicted_points']].sort_values('predicted_points', ascending=False)
-    
-    # Pro styling
-    styled_df = top_players
-    st.dataframe(styled_df, use_container_width=True, height=450, hide_index=True)
+    top_players = filtered[['Name', 'team_name', 'Position', 'dreamteam_count', 'price', 'gw_points', 'total_points', 'form', 'round', 'goals_scored', 'assists', 'bonus', 'bps', 'defensive_contribution', 'transfers_in', 'transfers_out', 'fixture_difficulty', 'predicted_points']].sort_values('predicted_points', ascending=False)
+    st.dataframe(top_players, use_container_width=True, height=450, hide_index=True)
   
   
   
@@ -565,6 +562,7 @@ st.markdown("*Built with ❤️ for FPL managers*")     #| Auto-refreshes every 
    
     
     
+
 
 
 
